@@ -24,9 +24,7 @@ my_bot = ChatBot(name='pepper',read_only = True,
     )
 
 trainer = ChatterBotCorpusTrainer(my_bot)
-trainer.train(
-    "./conversations.yml")
-
+trainer.train("./conversations.yml")
 while True:
     try:
         user_input = input("user > ")
